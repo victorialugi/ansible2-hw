@@ -110,7 +110,7 @@
         mode: '0644'
 ```
 
-`![вывод_задание_2.png](https://github.com/victorialugi/ansible2-hw/blob/main/%D0%B2%D1%8B%D0%B2%D0%BE%D0%B4_%D0%B7%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5_2.png)`
+![вывод_задание_2.png](https://github.com/victorialugi/ansible2-hw/blob/main/%D0%B2%D1%8B%D0%B2%D0%BE%D0%B4_%D0%B7%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5_2.png)
 
 
 ---
