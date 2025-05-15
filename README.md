@@ -92,25 +92,25 @@
 
 ### Задание 2
 
-`Приведите ответ в свободной форме........`
-
-1. `Заполните здесь этапы выполнения, если требуется ....`
-2. `Заполните здесь этапы выполнения, если требуется ....`
-3. `Заполните здесь этапы выполнения, если требуется ....`
-4. `Заполните здесь этапы выполнения, если требуется ....`
-5. `Заполните здесь этапы выполнения, если требуется ....`
-6. 
-
+```yaml
+---
+- name: Customize motd with IP, hostname, and greeting
+  hosts: localhost
+  become: yes
+  vars:
+    greeting: "Хорошего дня, системный администратор!"
+  tasks:
+    - name: Update motd file with IP, hostname, and greeting
+      ansible.builtin.copy:
+        content: |
+          IP Address: {{ ansible_facts['default_ipv4']['address'] }}
+          Hostname: {{ ansible_facts['hostname'] }}
+          {{ greeting }}
+        dest: /etc/motd
+        mode: '0644'
 ```
-Поле для вставки кода...
-....
-....
-....
-....
-```
 
-`При необходимости прикрепитe сюда скриншоты
-![Название скриншота 2](ссылка на скриншот 2)`
+`![вывод_задание_2.png](https://github.com/victorialugi/ansible2-hw/blob/main/%D0%B2%D1%8B%D0%B2%D0%BE%D0%B4_%D0%B7%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5_2.png)`
 
 
 ---
