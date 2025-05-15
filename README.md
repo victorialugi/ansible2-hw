@@ -1,4 +1,4 @@
-# Домашнее задание к занятию "`Название занятия`" - `Фамилия и имя студента`
+# Домашнее задание к занятию "`Название занятия`" - `Виктория Лугинина`
 
 
 ### Инструкция по выполнению домашнего задания
@@ -24,21 +24,30 @@
 
 ### Задание 1
 
-`Приведите ответ в свободной форме........`
+```yaml
+---
+- name: Download and extract Apache Kafka
+  hosts: localhost
+  become: yes
+  tasks:
+    - name: Create directory for Kafka
+      ansible.builtin.file:
+        path: /opt/kafka
+        state: directory
+        mode: '0755'
 
-1. `Заполните здесь этапы выполнения, если требуется ....`
-2. `Заполните здесь этапы выполнения, если требуется ....`
-3. `Заполните здесь этапы выполнения, если требуется ....`
-4. `Заполните здесь этапы выполнения, если требуется ....`
-5. `Заполните здесь этапы выполнения, если требуется ....`
-6. 
+    - name: Download Kafka archive
+      ansible.builtin.get_url:
+        url: https://archive.apache.org/dist/kafka/3.7.0/kafka_2.13-3.7.0.tgz
+        dest: /tmp/kafka_2.13-3.7.0.tgz
+        mode: '0644'
 
-```
-Поле для вставки кода...
-....
-....
-....
-....
+    - name: Extract Kafka archive
+      ansible.builtin.unarchive:
+        src: /tmp/kafka_2.13-3.7.0.tgz
+        dest: /opt/kafka
+        remote_src: yes
+        creates: /opt/kafka/kafka_2.13-3.7.0
 ```
 
 `При необходимости прикрепитe сюда скриншоты
