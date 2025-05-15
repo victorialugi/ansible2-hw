@@ -84,10 +84,8 @@
         mode: '0644'
 ```
 
-![вывод_playbook1-download.png](https://github.com/victorialugi/ansible2-hw/blob/main/%D0%B2%D1%8B%D0%B2%D0%BE%D0%B4_playbook1-download.png)`
-
-![вывод_playbook2-tuned.png](https://github.com/victorialugi/ansible2-hw/blob/main/%D0%B2%D1%8B%D0%B2%D0%BE%D0%B4_playbook2-tuned.png)`
-
+![вывод_playbook1-download.png](https://github.com/victorialugi/ansible2-hw/blob/main/%D0%B2%D1%8B%D0%B2%D0%BE%D0%B4_playbook1-download.png)
+![вывод_playbook2-tuned.png](https://github.com/victorialugi/ansible2-hw/blob/main/%D0%B2%D1%8B%D0%B2%D0%BE%D0%B4_playbook2-tuned.png)
 ![вывод_playbook3-motd.png](https://github.com/victorialugi/ansible2-hw/blob/main/%D0%B2%D1%8B%D0%B2%D0%BE%D0%B4_playbook3-motd.png)`
 
 ---
