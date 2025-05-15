@@ -50,7 +50,26 @@
         creates: /opt/kafka/kafka_2.13-3.7.0
 ```
 
-`При необходимости прикрепитe сюда скриншоты
+```yaml
+---
+- name: Install and configure tuned
+  hosts: localhost
+  become: yes
+  tasks:
+    - name: Install tuned package
+      ansible.builtin.apt:
+        name: tuned
+        state: present
+        update_cache: yes
+
+    - name: Ensure tuned service is started and enabled
+      ansible.builtin.service:
+        name: tuned
+        state: started
+        enabled: yes`
+```
+
+При необходимости прикрепитe сюда скриншоты
 ![Название скриншота 1](ссылка на скриншот 1)`
 
 
