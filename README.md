@@ -69,6 +69,21 @@
         enabled: yes`
 ```
 
+```yaml
+---
+- name: Customize motd with variable
+  hosts: localhost
+  become: yes
+  vars:
+    custom_motd: "Добро пожаловать в мой сервер! - Виктория Лугинина"
+  tasks:
+    - name: Update motd file
+      ansible.builtin.copy:
+        content: "{{ custom_motd }}"
+        dest: /etc/motd
+        mode: '0644'
+```
+
 При необходимости прикрепитe сюда скриншоты
 ![Название скриншота 1](ссылка на скриншот 1)`
 
